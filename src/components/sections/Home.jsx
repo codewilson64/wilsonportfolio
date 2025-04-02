@@ -3,7 +3,7 @@ import React from 'react'
 const Home = () => {
   return (
     <section id='home' className='relative min-h-screen flex items-center justify-center'>
-      <div className='text-center px-4 z-10'>
+      <div className='text-center px-4'>
         <h1 className='text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right'>Hi, I'm Wilson</h1>
         <p className='text-gray-400 text-lg mb-8 max-w-lg mx-auto'>
           I'm a web developer who loves crafting clean, scalable web applications.

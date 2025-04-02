@@ -9,7 +9,7 @@ const MobileMenu = ({ menuOpen, setMenuOpen }) => {
             <a 
               key={link.id} 
               href={`#${link.id}`} 
-              className={`${menuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'} text-2xl font-semibold text-white my-4 transform transition-transform duration-300`} 
+              className={`${menuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'} text-2xl font-semibold text-white my-4 transform transition-transform duration-300 z-40`} 
               onClick={() => setMenuOpen(false)}
             >
               {link.title}
