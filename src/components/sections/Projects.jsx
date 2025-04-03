@@ -22,7 +22,13 @@ const Projects = () => {
               </div>
 
               <div className='flex items-center justify-between'>
-                <a href="#" className='text-blue-400 hover:text-blue-300 transition-colors my-4'>View Project</a>
+                <a 
+                  href="https://chatgram-jrfg.onrender.com/" 
+                  target="_blank"
+                  className='text-blue-400 hover:text-blue-300 transition-colors my-4'
+                >
+                  View Project
+                </a>
               </div>
             </div>
             
@@ -40,7 +46,37 @@ const Projects = () => {
               </div>
 
               <div className='flex items-center justify-between'>
-                <a href="#" className='text-blue-400 hover:text-blue-300 transition-colors my-4'>View Project</a>
+                <a 
+                  href="https://codewilson64.github.io/techhaven/" 
+                  target="_blank"
+                  className='text-blue-400 hover:text-blue-300 transition-colors my-4'
+                >
+                  View Project
+                </a>
+              </div>
+            </div>
+
+            {/* Project 3 */}
+            <div className='p-6 rounded-xl border border-white/10 hover:border-blue-500/30'>
+              <h3 className='text-xl font-bold mb-2'>Video Streaming App</h3>
+              <p className='text-gray-300 mb-4'>A Video streaming website where users can watch all kinds of content.</p>
+              <div className='flex flex-wrap gap-2 mb-4'>
+                {["React", "Tailwind"].map((tech, key) => (
+                  <span key={key} className='bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 transition'>
+                    {tech}
+                  </span>
+                ))
+                }
+              </div>
+
+              <div className='flex items-center justify-between'>
+                <a 
+                  href="https://codewilson64.github.io/youtube-clone/" 
+                  target="_blank"
+                  className='text-blue-400 hover:text-blue-300 transition-colors my-4'
+                >
+                  View Project
+                </a>
               </div>
             </div>
 
