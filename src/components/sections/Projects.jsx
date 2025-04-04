@@ -71,7 +71,7 @@ const Projects = () => {
 
               <div className='flex items-center justify-between'>
                 <a 
-                  href="https://codewilson64.github.io/youtube-clone/" 
+                  href="https://codewilson64.github.io/vidstream/" 
                   target="_blank"
                   className='text-blue-400 hover:text-blue-300 transition-colors my-4'
                 >
