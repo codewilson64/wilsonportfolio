@@ -1,18 +1,41 @@
 import React from 'react'
-import { projectsList } from '../../constants'
+import { chatfriend_img_1, chatfriend_img_2, chatgram_img_1, chatgram_img_2, chatgram_img_3} from '../../assets'
+import Carousel from '../Carousel'
+import FirstCarousel from '../FirstCarousel'
+import { IoIosArrowRoundForward } from 'react-icons/io'
 
 const Projects = () => {
+  const firstSlides = [
+    chatgram_img_1,
+    chatgram_img_2,
+    chatgram_img_3
+  ]
+
+  const secondSlides = [
+    chatfriend_img_1,
+    chatfriend_img_2,
+  ]
+
+
   return (
     <section id='projects' className='min-h-screen flex items-center justify-center py-20'>
-      <div className='max-w-5xl mx-auto px-4'>
-        <h2 className='text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 text-center bg-clip-text text-transparent'>Featured Projects</h2>
+      <div className='max-w-3xl mx-auto px-4'>
+        <h2 className='text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 text-center bg-clip-text text-transparent'>
+          My Apps/Projects
+        </h2>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+        <div className='grid grid-cols-1 gap-6'>
             {/* Project 1 */}
-            <div className='p-6 rounded-xl border border-white/10 hover:border-blue-500/30'>
-              <h3 className='text-xl font-bold mb-2'>Social Media Platform</h3>
-              <p className='text-gray-300 mb-4'>A social platform that enable users to create and share content</p>
-              <div className='flex flex-wrap gap-2 mb-4'>
+            <div className='p-9 rounded-xl border border-white/20 hover:border-blue-500/40'>
+              <h3 className='text-xl font-bold mb-2'>Chatgram</h3>
+              <p className='text-gray-400 mb-4'>Chatgram is a social media platform where users can create, like, delete, comment to a post and even follow other users just like an actual social media app. Users also can update their profile such as image and changing their name or password.</p>
+                <FirstCarousel>
+                  {firstSlides.map((img) => (
+                    <img src={img} alt="image" className='mb-4 rounded-xl object-contain'/>
+                  ))}
+                </FirstCarousel>
+              <div className='flex flex-wrap items-center gap-2 mb-4'>
+                <p className='text-blue-400 text-sm'>Build with: </p>
                 {["React", "Node.js", "Express.js", "MongoDB"].map((tech, key) => (
                   <span key={key} className='bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 transition'>
                     {tech}
@@ -27,17 +50,28 @@ const Projects = () => {
                   target="_blank"
                   className='text-blue-400 hover:text-blue-300 transition-colors my-4'
                 >
-                  View Project
+                <div className='flex items-center gap-1'>
+                  <p>View Project</p>
+                  <IoIosArrowRoundForward className='text-blue-400'/> 
+                </div>
                 </a>
               </div>
             </div>
             
             {/* Project 2 */}
-            <div className='p-6 rounded-xl border border-white/10 hover:border-blue-500/30'>
-              <h3 className='text-xl font-bold mb-2'>Ecommerce App</h3>
-              <p className='text-gray-300 mb-4'>An ecommerce app allows users to shop, add items to cart, and complete purchases</p>
-              <div className='flex flex-wrap gap-2 mb-4'>
-                {["React", "Tailwind", "Redux Toolkit"].map((tech, key) => (
+            <div className='p-9 rounded-xl border border-white/20 hover:border-blue-500/40'>
+              <h3 className='text-xl font-bold mb-2'>Chatfriends</h3>
+              <p className='text-gray-400 mb-4'>Chatfriends is a chat app that could allow users to chat with anyone in real-time just like modern chat application.
+                Users could see who is currently online from the sidebar as well.
+              </p>
+                <Carousel>
+                  {secondSlides.map((img) => (
+                    <img src={img} alt="image" className='mb-4 rounded-xl object-contain'/>
+                  ))}
+                </Carousel>
+              <div className='flex flex-wrap items-center gap-2 mb-4'>
+              <p className='text-blue-400 text-sm'>Build with: </p>
+                {["React", "Tailwind", "Zustand", "Socket.io"].map((tech, key) => (
                   <span key={key} className='bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 transition'>
                     {tech}
                   </span>
@@ -47,35 +81,14 @@ const Projects = () => {
 
               <div className='flex items-center justify-between'>
                 <a 
-                  href="https://codewilson64.github.io/techhaven/" 
+                  href="https://chatfriends-2a53.onrender.com" 
                   target="_blank"
                   className='text-blue-400 hover:text-blue-300 transition-colors my-4'
                 >
-                  View Project
-                </a>
-              </div>
-            </div>
-
-            {/* Project 3 */}
-            <div className='p-6 rounded-xl border border-white/10 hover:border-blue-500/30'>
-              <h3 className='text-xl font-bold mb-2'>Video Streaming App</h3>
-              <p className='text-gray-300 mb-4'>A Video streaming website where users can watch all kinds of content.</p>
-              <div className='flex flex-wrap gap-2 mb-4'>
-                {["React", "Tailwind"].map((tech, key) => (
-                  <span key={key} className='bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 transition'>
-                    {tech}
-                  </span>
-                ))
-                }
-              </div>
-
-              <div className='flex items-center justify-between'>
-                <a 
-                  href="https://codewilson64.github.io/vidstream/" 
-                  target="_blank"
-                  className='text-blue-400 hover:text-blue-300 transition-colors my-4'
-                >
-                  View Project
+                <div className='flex items-center gap-1'>
+                  <p>View Project</p>
+                  <IoIosArrowRoundForward className='text-blue-400'/> 
+                </div>
                 </a>
               </div>
             </div>
