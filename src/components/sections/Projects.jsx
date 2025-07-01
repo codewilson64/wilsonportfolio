@@ -1,5 +1,4 @@
-import React from 'react'
-import { chatfriend_img_1, chatfriend_img_2, chatgram_img_1, chatgram_img_2, chatgram_img_3} from '../../assets'
+import { chatfriend_img_1, chatfriend_img_2, chatgram_img_1, chatgram_img_2, chatgram_img_3, luxora_img_1, luxora_img_2, luxora_img_3, luxora_img_4} from '../../assets'
 import Carousel from '../Carousel'
 import FirstCarousel from '../FirstCarousel'
 import { IoIosArrowRoundForward } from 'react-icons/io'
@@ -14,6 +13,13 @@ const Projects = () => {
   const secondSlides = [
     chatfriend_img_1,
     chatfriend_img_2,
+  ]
+
+  const thirdSlides = [
+    luxora_img_1,
+    luxora_img_2,
+    luxora_img_3,
+    luxora_img_4
   ]
 
 
@@ -57,8 +63,43 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-            
+
             {/* Project 2 */}
+            <div className='p-9 rounded-xl border border-white/20 hover:border-blue-500/40'>
+              <h3 className='text-xl font-bold mb-2'>Luxora</h3>
+              <p className='text-gray-400 mb-4'>
+                Luxora is a modern e-commerce website designed to showcase and sell premium fashion accessories. Built with React, Tailwind CSS, and Redux Toolkit, Luxora features a clean, minimalist interface, responsive design, dynamic product pages, and an intuitive shopping cart system.
+              </p>
+                <Carousel>
+                  {thirdSlides.map((img) => (
+                    <img src={img} alt="image" className='mb-4 rounded-xl object-contain'/>
+                  ))}
+                </Carousel>
+              <div className='flex flex-wrap items-center gap-2 mb-4'>
+              <p className='text-blue-400 text-sm'>Build with: </p>
+                {["React", "Tailwind", "Redux Toolkit"].map((tech, key) => (
+                  <span key={key} className='bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 transition'>
+                    {tech}
+                  </span>
+                ))
+                }
+              </div>
+
+              <div className='flex items-center justify-between'>
+                <a 
+                  href="https://luxorashop.vercel.app/" 
+                  target="_blank"
+                  className='text-blue-400 hover:text-blue-300 transition-colors my-4'
+                >
+                <div className='flex items-center gap-1'>
+                  <p>View Project</p>
+                  <IoIosArrowRoundForward className='text-blue-400'/> 
+                </div>
+                </a>
+              </div>
+            </div>
+            
+            {/* Project 3 */}
             <div className='p-9 rounded-xl border border-white/20 hover:border-blue-500/40'>
               <h3 className='text-xl font-bold mb-2'>Chatfriends</h3>
               <p className='text-gray-400 mb-4'>Chatfriends is a chat app that could allow users to chat with anyone in real-time just like modern chat application.
