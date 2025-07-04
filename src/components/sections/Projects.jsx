@@ -68,7 +68,7 @@ const Projects = () => {
             <div className='p-9 rounded-xl border border-white/20 hover:border-blue-500/40'>
               <h3 className='text-xl font-bold mb-2'>Luxora</h3>
               <p className='text-gray-400 mb-4'>
-                Luxora is a modern e-commerce website designed to showcase and sell premium fashion accessories. Built with React, Tailwind CSS, and Redux Toolkit, Luxora features a clean, minimalist interface, responsive design, dynamic product pages, and an intuitive shopping cart system.
+                Luxora is a modern e-commerce website designed to showcase and sell premium fashion accessories. Built with React, Tailwind CSS, and Redux Toolkit. Luxora features a clean, minimalist interface, an intuitive shopping cart system and a payment gateway with Stripe.
               </p>
                 <Carousel>
                   {thirdSlides.map((img) => (
@@ -77,7 +77,7 @@ const Projects = () => {
                 </Carousel>
               <div className='flex flex-wrap items-center gap-2 mb-4'>
               <p className='text-blue-400 text-sm'>Build with: </p>
-                {["React", "Tailwind", "Redux Toolkit"].map((tech, key) => (
+                {["React", "Tailwind", "Redux Toolkit", "Stripe"].map((tech, key) => (
                   <span key={key} className='bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 transition'>
                     {tech}
                   </span>
