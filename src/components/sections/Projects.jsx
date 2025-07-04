@@ -87,7 +87,7 @@ const Projects = () => {
 
               <div className='flex items-center justify-between'>
                 <a 
-                  href="https://luxorashop.vercel.app/" 
+                  href="https://luxorastore.vercel.app/" 
                   target="_blank"
                   className='text-blue-400 hover:text-blue-300 transition-colors my-4'
                 >
