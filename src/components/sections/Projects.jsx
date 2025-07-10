@@ -49,18 +49,33 @@ const Projects = () => {
                 ))
                 }
               </div>
-
-              <div className='flex items-center justify-between'>
-                <a 
-                  href="https://chatgram-jrfg.onrender.com/" 
-                  target="_blank"
-                  className='text-blue-400 hover:text-blue-300 transition-colors my-4'
-                >
-                <div className='flex items-center gap-1'>
-                  <p>View Project</p>
-                  <IoIosArrowRoundForward className='text-blue-400'/> 
+              
+              <div className='flex items-center gap-6'>             
+                <div className='flex items-center justify-between'>
+                  <a 
+                    href="https://chatgram-jrfg.onrender.com/" 
+                    target="_blank"
+                    className='text-blue-400 hover:text-blue-300 transition-colors my-4'
+                  >
+                  <div className='flex items-center gap-1'>
+                    <p>View Project</p>
+                    <IoIosArrowRoundForward className='text-blue-400'/> 
+                  </div>
+                  </a>
                 </div>
-                </a>
+
+                <div className='flex items-center justify-between'>
+                  <a 
+                    href="https://github.com/codewilson64/socialmedia" 
+                    target="_blank"
+                    className='text-blue-400 hover:text-blue-300 transition-colors my-4'
+                  >
+                  <div className='flex items-center gap-1'>
+                    <p>View Code</p>
+                    <IoIosArrowRoundForward className='text-blue-400'/> 
+                  </div>
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -84,18 +99,33 @@ const Projects = () => {
                 ))
                 }
               </div>
-
-              <div className='flex items-center justify-between'>
-                <a 
-                  href="https://luxorastore.vercel.app/" 
-                  target="_blank"
-                  className='text-blue-400 hover:text-blue-300 transition-colors my-4'
-                >
-                <div className='flex items-center gap-1'>
-                  <p>View Project</p>
-                  <IoIosArrowRoundForward className='text-blue-400'/> 
+              
+              <div className='flex items-center gap-6'>             
+                <div className='flex items-center justify-between'>
+                  <a 
+                    href="https://luxorastore.vercel.app/" 
+                    target="_blank"
+                    className='text-blue-400 hover:text-blue-300 transition-colors my-4'
+                  >
+                  <div className='flex items-center gap-1'>
+                    <p>View Project</p>
+                    <IoIosArrowRoundForward className='text-blue-400'/> 
+                  </div>
+                  </a>
                 </div>
-                </a>
+
+                <div className='flex items-center justify-between'>
+                  <a 
+                    href="https://github.com/codewilson64/luxora-app" 
+                    target="_blank"
+                    className='text-blue-400 hover:text-blue-300 transition-colors my-4'
+                  >
+                  <div className='flex items-center gap-1'>
+                    <p>View Code</p>
+                    <IoIosArrowRoundForward className='text-blue-400'/> 
+                  </div>
+                  </a>
+                </div>
               </div>
             </div>
             
@@ -119,18 +149,33 @@ const Projects = () => {
                 ))
                 }
               </div>
-
-              <div className='flex items-center justify-between'>
-                <a 
-                  href="https://chatfriends-2a53.onrender.com" 
-                  target="_blank"
-                  className='text-blue-400 hover:text-blue-300 transition-colors my-4'
-                >
-                <div className='flex items-center gap-1'>
-                  <p>View Project</p>
-                  <IoIosArrowRoundForward className='text-blue-400'/> 
+              
+              <div className='flex items-center gap-6'>
+                <div className='flex items-center justify-between'>
+                  <a 
+                    href="https://chatfriends-2a53.onrender.com" 
+                    target="_blank"
+                    className='text-blue-400 hover:text-blue-300 transition-colors my-4'
+                  >
+                  <div className='flex items-center gap-1'>
+                    <p>View Project</p>
+                    <IoIosArrowRoundForward className='text-blue-400'/> 
+                  </div>
+                  </a>
                 </div>
-                </a>
+
+                <div className='flex items-center justify-between'>
+                  <a 
+                    href="https://github.com/codewilson64/chatfriends" 
+                    target="_blank"
+                    className='text-blue-400 hover:text-blue-300 transition-colors my-4'
+                  >
+                  <div className='flex items-center gap-1'>
+                    <p>View Code</p>
+                    <IoIosArrowRoundForward className='text-blue-400'/> 
+                  </div>
+                  </a>
+                </div>
               </div>
             </div>
 
