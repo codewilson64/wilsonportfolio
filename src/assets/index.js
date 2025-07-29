@@ -2,9 +2,9 @@ import chatfriend_img_1 from './chatfriends_desktop_1.png'
 import chatfriend_img_2 from './chatfriends_desktop_3.png'
 import chatfriend_img_3 from './chatfriends_mobile.png'
 
-import chatgram_img_1 from './chatgram_1.png'
-import chatgram_img_2 from './chatgram_desktop_2.png'
-import chatgram_img_3 from './chatgram_3.png'
+import chatgram_img_1 from './chatgram_img_1.png'
+import chatgram_img_2 from './chatgram_img_2.png'
+import chatgram_img_3 from './chatgram_img_3.png'
 
 import luxora_img_1 from './luxora_desktop_1.png'
 import luxora_img_2 from './luxora_desktop_2.png'

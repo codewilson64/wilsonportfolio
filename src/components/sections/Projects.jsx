@@ -34,7 +34,7 @@ const Projects = () => {
             {/* Project 1 */}
             <div className='p-9 rounded-xl border border-white/20 hover:border-blue-500/40'>
               <h3 className='text-xl font-bold mb-2'>Chatgram</h3>
-              <p className='text-gray-400 mb-4'>Chatgram is a social media platform where users can create, like, delete, comment to a post and even follow other users just like an actual social media app. Users also can update their profile such as image and changing their name or password.</p>
+              <p className='text-gray-400 mb-4'>Chatgram is a social media platform where users can create, like, delete, comment to a post and even follow other users just like an actual social media app. Users also can update their profile image and their username.</p>
                 <FirstCarousel>
                   {firstSlides.map((img) => (
                     <img src={img} alt="image" className='mb-4 rounded-xl object-contain'/>
@@ -42,7 +42,7 @@ const Projects = () => {
                 </FirstCarousel>
               <div className='flex flex-wrap items-center gap-2 mb-4'>
                 <p className='text-blue-400 text-sm'>Build with: </p>
-                {["React", "Node.js", "Express.js", "MongoDB"].map((tech, key) => (
+                {["Next.js", "Typescript", "Postgresql"].map((tech, key) => (
                   <span key={key} className='bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 transition'>
                     {tech}
                   </span>
@@ -53,7 +53,7 @@ const Projects = () => {
               <div className='flex items-center gap-6'>             
                 <div className='flex items-center justify-between'>
                   <a 
-                    href="https://chatgram-jrfg.onrender.com/" 
+                    href="https://mychatgram.vercel.app/" 
                     target="_blank"
                     className='text-blue-400 hover:text-blue-300 transition-colors my-4'
                   >
@@ -66,7 +66,7 @@ const Projects = () => {
 
                 <div className='flex items-center justify-between'>
                   <a 
-                    href="https://github.com/codewilson64/socialmedia" 
+                    href="https://github.com/codewilson64/chatgram" 
                     target="_blank"
                     className='text-blue-400 hover:text-blue-300 transition-colors my-4'
                   >

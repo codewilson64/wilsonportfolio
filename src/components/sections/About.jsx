@@ -1,6 +1,6 @@
 const About = () => {
-  const frontendSkills = ["HTML", "CSS", "Javascript", "React", "Tailwind", "Redux", "Zustand"]
-  const backendSkills = ["Node.js", "Express.js", "MongoDB", "JWT"]
+  const frontendSkills = ["HTML", "CSS", "Javascript", "React", "Next.js", "Typescript", "Tailwind", "Redux", "Zustand"]
+  const backendSkills = ["Node.js", "Express.js", "MongoDB", "Postgresql", "JWT"]
 
   return (
     <section id='about' className='min-h-screen flex items-center justify-center py-20'>
