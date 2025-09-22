@@ -1,3 +1,10 @@
+import stellary_img_1 from './stellary_1.png'
+import stellary_img_2 from './stellary_2.png'
+import stellary_img_3 from './stellary_3.png'
+import stellary_img_4 from './stellary_4.png'
+import stellary_img_5 from './stellary_5.png'
+import stellary_img_6 from './stellary_6.png'
+
 import chatfriend_img_1 from './chatfriends_desktop_1.png'
 import chatfriend_img_2 from './chatfriends_desktop_3.png'
 import chatfriend_img_3 from './chatfriends_mobile.png'
@@ -11,7 +18,13 @@ import luxora_img_2 from './luxora_desktop_2.png'
 import luxora_img_3 from './luxora_desktop_3.png'
 import luxora_img_4 from './luxora_desktop_4.png'
 
-export { 
+export {
+  stellary_img_1,
+  stellary_img_2,
+  stellary_img_3,
+  stellary_img_4, 
+  stellary_img_5,
+  stellary_img_6,
   chatfriend_img_1, 
   chatfriend_img_2, 
   chatfriend_img_3, 
