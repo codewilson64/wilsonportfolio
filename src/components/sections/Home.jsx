@@ -10,12 +10,9 @@ const Home = () => {
       <div className="absolute inset-0 bg-black/85 z-0" />
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black/90 to-transparent z-10" />
       <div className='text-center px-4 relative z-10'>
-        <h1 className='text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right'>
-          React Developer
+        <h1 className='text-5xl md:text-7xl font-bold mb-5 pb-2 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent'>
+          Software Engineer
         </h1>
-        <p className='text-gray-400 text-lg mb-8 max-w-lg mx-auto'>
-          
-        </p>
 
         <div className='flex justify-center space-x-4'>
           <a href="#projects" className='bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-1'>View Projects</a>

@@ -1,42 +1,87 @@
 const About = () => {
-  const frontendSkills = ["HTML", "CSS", "Javascript", "React", "Next.js", "Typescript", "Tailwind", "Redux", "Zustand"]
-  const backendSkills = ["Node.js", "Express.js", "MongoDB", "Postgresql", "JWT"]
+  const frontendSkills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Tailwind",
+    "Redux",
+    "Zustand",
+  ]
+
+  const backendSkills = [
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "PostgreSQL",
+    "JWT",
+    "Prisma ORM",
+  ]
 
   return (
-    <section id='about' className='min-h-screen flex items-center justify-center py-20'>
-      <div className='max-w-3xl mx-auto px-4'>
-        <h2 className='text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 text-center bg-clip-text text-transparent'>About Me</h2>
+    <section
+      id="about"
+      className="min-h-screen flex items-center justify-center py-24"
+    >
+      <div className="max-w-5xl mx-auto px-4">
+        {/* Heading */}
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+          About Me
+        </h2>
 
-      <div className='rounded-xl p-8 border border-white/20'>
-        <p className='text-gray-400 mb-6'>
-          I create websites and mobile apps with a focus on clean design, strong performance, and practical use.
-        </p>
+        {/* Card */}
+        <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-8 md:p-10">
+          {/* Description */}
+          <p className="text-gray-400 text-lg leading-relaxed mb-10 max-w-3xl">
+            I build websites and mobile apps that are clean, fast, and easy to
+            use. I focus on practical features, smooth performance, and simple
+            design so the products feel good to use and actually solve real
+            problems.
+          </p>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
-          <div className='rounded-xl p-6'>
-            <h3 className='text-xl font-bold mb-4'>Frontend</h3>
-            <div className='flex flex-wrap gap-2'>
-              {frontendSkills.map((tech, key) => (
-                <span key={key} className='bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 transition'>
-                  {tech}
-                </span>
-              ))}
+          {/* Skills */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            {/* Frontend */}
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-white">
+                Frontend
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {frontendSkills.map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-4 py-1.5 rounded-full text-sm font-medium
+                               bg-blue-500/10 text-blue-400
+                               hover:bg-blue-500/20 transition"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </div>
-          </div>
 
-          <div className='rounded-xl p-6'>
-            <h3 className='text-xl font-bold mb-4'>Backend</h3>
-            <div className='flex flex-wrap gap-2'>
-              {backendSkills.map((tech, key) => (
-                <span key={key} className='bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 transition'>
-                  {tech}
-                </span>
-              ))}
+            {/* Backend */}
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-white">
+                Backend
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {backendSkills.map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-4 py-1.5 rounded-full text-sm font-medium
+                               bg-cyan-500/10 text-cyan-400
+                               hover:bg-cyan-500/20 transition"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
       </div>
     </section>
   )
