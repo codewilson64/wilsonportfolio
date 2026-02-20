@@ -46,63 +46,7 @@ const Projects = () => {
           My Apps/Projects
         </h2>
 
-        <div className='grid grid-cols-1 gap-6'>
-            {/* Project 1 */}
-            <div className='p-9 rounded-xl border border-white/20 bg-white/5 hover:border-blue-500/40'>
-              <div className='flex items-center gap-3 mb-4'>
-                <img src={stellary_logo} alt="stellary logo" className='w-10 h-10 rounded-full'/>
-                <h3 className='text-xl font-bold'>Stellary</h3>
-              </div>
-              <p className='text-gray-400 mb-4'>
-                A book summary app that provides easy-to-understand summaries of popular books, helping people learn key ideas quickly. Built with a clean design and smooth performance to make reading simple and enjoyable.
-              </p>
-                <div className='relative bg-black rounded-xl'>
-                  <div 
-                    className='w-full flex items-center overflow-x-auto scroll-smooth scrollbar-hide'
-                    ref={scrollRef}
-                  >
-                    {mobileSlides.map((img, index) => (
-                      <div key={index} className='flex-shrink-0'>
-                        <img src={img} alt="image" className='w-56 h-auto mb-4 rounded-xl object-contain'/>
-                      </div>                      
-                    ))}
-                  </div>
-                    <div className="absolute inset-0 flex items-center justify-between p-4">
-                      <button onClick={scrollLeft} className="p-1 rounded-full shadow bg-white/80 text-blue-500 hover:bg-blue-500/20 cursor-pointer">
-                        <FaArrowLeft size={20} />
-                      </button>
-                      <button onClick={scrollRight} className="p-1 rounded-full shadow bg-white/80 text-blue-500 hover:bg-blue-500/20 cursor-pointer">
-                        <FaArrowRight size={20} />
-                      </button>
-                    </div>
-                  </div>
-
-              {/* <div className='flex flex-wrap items-center gap-2 mb-4'>
-                <p className='text-blue-400 text-sm'>Build with: </p>
-                {["React native"].map((tech, key) => (
-                  <span key={key} className='bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 transition'>
-                    {tech}
-                  </span>
-                ))
-                }
-              </div> */}
-              
-              <div className='flex items-center gap-6'>             
-                <div className='flex items-center justify-between'>
-                  <a 
-                    href="https://play.google.com/store/apps/details?id=com.codewilson64.stellarapp" 
-                    target="_blank"
-                    className='text-blue-400 hover:text-blue-300 transition-colors my-4'
-                  >
-                  <div className='flex items-center gap-1'>
-                    <p>Download App</p>
-                    <IoIosArrowRoundForward className='text-blue-400'/> 
-                  </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-
+        <div className='grid grid-cols-1 gap-20'>
             {/* Project 2 */}
             <div className='p-9 rounded-xl border border-white/20 bg-white/5 hover:border-blue-500/40'>
               <div className='flex items-center gap-3 mb-4'>
@@ -118,15 +62,6 @@ const Projects = () => {
                     <img src={img} alt="image" className='mb-4 rounded-xl object-contain'/>
                   ))}
                 </Carousel>
-              {/* <div className='flex flex-wrap items-center gap-2 mb-4'>
-                <p className='text-blue-400 text-sm'>Build with: </p>
-                {["Next.js", "Typescript", "Postgresql"].map((tech, key) => (
-                  <span key={key} className='bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 transition'>
-                    {tech}
-                  </span>
-                ))
-                }
-              </div> */}
               
               <div className='flex items-center gap-6'>             
                 <div className='flex items-center justify-between'>
@@ -155,8 +90,163 @@ const Projects = () => {
                   </a>
                 </div>
               </div>
-            </div>
+              <div className="mt-8 space-y-5">
 
+                <h4 className="text-lg font-semibold text-blue-400 tracking-wide">
+                  Tech Stack & Architecture
+                </h4>
+
+                <div className="space-y-4 text-sm text-gray-400">
+
+                  <div>
+                    <p className="text-blue-300 font-medium">Frontend</p>
+                    <p>
+                      Built with Next.js and TypeScript for type-safe development, 
+                      server-side rendering, and improved SEO performance.
+                      Styled using Tailwind CSS.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-blue-300 font-medium">Backend & Database</p>
+                    <p>
+                      PostgreSQL (hosted on Neon) with Prisma ORM for schema management 
+                      and type-safe database queries.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-blue-300 font-medium">Authentication</p>
+                    <p>
+                      Integrated Better Auth for secure session-based authentication 
+                      and protected routes to ensure user data privacy.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-blue-300 font-medium">Payments</p>
+                    <p>
+                      Implemented subscription billing using Polar, enabling users 
+                      to unlock premium resume templates and features.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-blue-300 font-medium">Deployment</p>
+                    <p>
+                      Deployed on Vercel with custom domain configuration and DNS 
+                      management via Namecheap.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            {/* Project 1 */}
+            <div className='p-9 rounded-xl border border-white/20 bg-white/5 hover:border-blue-500/40'>
+              <div className='flex items-center gap-3 mb-4'>
+                <img src={stellary_logo} alt="stellary logo" className='w-10 h-10 rounded-full'/>
+                <h3 className='text-xl font-bold'>Stellary: Book Summary</h3>
+              </div>
+              <p className='text-gray-400 mb-4'>
+                A book summary app that provides easy-to-understand summaries of popular books, helping people learn key ideas quickly. Built with a clean design and smooth performance to make reading simple and enjoyable.
+              </p>
+                <div className='relative bg-black rounded-xl'>
+                  <div 
+                    className='w-full flex items-center overflow-x-auto scroll-smooth scrollbar-hide'
+                    ref={scrollRef}
+                  >
+                    {mobileSlides.map((img, index) => (
+                      <div key={index} className='flex-shrink-0'>
+                        <img src={img} alt="image" className='w-56 h-auto mb-4 rounded-xl object-contain'/>
+                      </div>                      
+                    ))}
+                  </div>
+                    <div className="absolute inset-0 flex items-center justify-between p-4">
+                      <button onClick={scrollLeft} className="p-1 rounded-full shadow bg-white/80 text-blue-500 hover:bg-blue-500/20 cursor-pointer">
+                        <FaArrowLeft size={20} />
+                      </button>
+                      <button onClick={scrollRight} className="p-1 rounded-full shadow bg-white/80 text-blue-500 hover:bg-blue-500/20 cursor-pointer">
+                        <FaArrowRight size={20} />
+                      </button>
+                    </div>
+                  </div>
+              
+              <div className='flex items-center gap-6'>             
+                <div className='flex items-center justify-between'>
+                  <a 
+                    href="https://play.google.com/store/apps/details?id=com.codewilson64.stellarapp" 
+                    target="_blank"
+                    className='text-blue-400 hover:text-blue-300 transition-colors my-4'
+                  >
+                  <div className='flex items-center gap-1'>
+                    <p>Download App</p>
+                    <IoIosArrowRoundForward className='text-blue-400'/> 
+                  </div>
+                  </a>
+                </div>
+                <div className='flex items-center justify-between'>
+                  <a 
+                    href="https://github.com/codewilson64/stellar" 
+                    target="_blank"
+                    className='text-blue-400 hover:text-blue-300 transition-colors my-4'
+                  >
+                  <div className='flex items-center gap-1'>
+                    <p>View Code</p>
+                    <IoIosArrowRoundForward className='text-blue-400'/> 
+                  </div>
+                  </a>
+                </div>
+              </div>
+              <div className="mt-8 space-y-5">
+
+                <h4 className="text-lg font-semibold text-blue-400 tracking-wide">
+                  Tech Stack & Architecture
+                </h4>
+
+                <div className="space-y-4 text-sm text-gray-400">
+
+                  <div>
+                    <p className="text-blue-300 font-medium">Frontend</p>
+                    <p>
+                      Built with React Native to deliver a smooth cross-platform mobile experience.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-blue-300 font-medium">Backend & Database</p>
+                    <p>
+                      Powered by Appwrite for backend services, including database management.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-blue-300 font-medium">Authentication</p>
+                    <p>
+                      Implemented secure user authentication using Appwrite Auth 
+                      to manage sessions and protect user-specific content.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-blue-300 font-medium">Payments</p>
+                    <p>
+                      Integrated RevenueCat to handle in-app subscriptions, enabling 
+                      premium access to exclusive summaries and managing subscription states reliably.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-blue-300 font-medium">Distribution</p>
+                    <p>
+                      Published on Google Play Store, including production build configuration 
+                      and release management.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </section>
