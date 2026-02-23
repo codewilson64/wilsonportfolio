@@ -10,6 +10,8 @@ import confidencv_img_0 from './confidencv_0.png'
 import confidencv_img_1 from './confidencv_1.png'
 import confidencv_img_2 from './confidencv_2.png'
 import confidencv_img_3 from './confidencv_3.png'
+import confidencv_img_4 from './confidencv_4.png'
+import confidencv_img_5 from './confidencv_5.png'
 import confidencv_logo from './confidencv_logo.png'
 
 import chatfriend_img_1 from './chatfriends_desktop_1.png'
@@ -38,6 +40,8 @@ export {
   confidencv_img_1,
   confidencv_img_2,
   confidencv_img_3,
+  confidencv_img_4,
+  confidencv_img_5,
   confidencv_logo,
 
   chatfriend_img_1, 

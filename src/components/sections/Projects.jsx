@@ -9,8 +9,8 @@ import {
   stellary_img_6, 
   confidencv_img_0, 
   confidencv_img_1, 
-  confidencv_img_2, 
   confidencv_img_3,
+  confidencv_img_5,
   confidencv_logo,
 } from '../../assets'
 import Carousel from '../Carousel'
@@ -30,8 +30,8 @@ const Projects = () => {
   const firstSlides = [
     confidencv_img_0,
     confidencv_img_1,
-    confidencv_img_2,
     confidencv_img_3,
+    confidencv_img_5,
   ]
 
   const scrollRef = useRef(null)
