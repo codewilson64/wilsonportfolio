@@ -17,7 +17,7 @@ function App() {
       </div>
       <div className={`min-h-screen ${menuOpen ? 'h-screen opacity-50 pointer-events-auto' : ''}`}>    
         <Home />
-        <About />
+        {/* <About /> */}
         <Projects />
         <Contact />
       </div>

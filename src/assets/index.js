@@ -1,11 +1,3 @@
-import stellary_img_1 from './stellary_1.png'
-import stellary_img_2 from './stellary_2.png'
-import stellary_img_3 from './stellary_3.png'
-import stellary_img_4 from './stellary_4.png'
-import stellary_img_5 from './stellary_5.png'
-import stellary_img_6 from './stellary_6.png'
-import stellary_logo from './stellary_logo.png'
-
 import confidencv_img_0 from './confidencv_0.png'
 import confidencv_img_1 from './confidencv_1.png'
 import confidencv_img_2 from './confidencv_2.png'
@@ -14,28 +6,21 @@ import confidencv_img_4 from './confidencv_4.png'
 import confidencv_img_5 from './confidencv_5.png'
 import confidencv_logo from './confidencv_logo.png'
 
-import chatfriend_img_1 from './chatfriends_desktop_1.png'
-import chatfriend_img_2 from './chatfriends_desktop_3.png'
-import chatfriend_img_3 from './chatfriends_mobile.png'
+import resumelab_img1 from './resumelab_img1.png'
+import resumelab_img2 from './resumelab_img2.png'
+import resumelab_img3 from './resumelab_img3.png'
+import resumelab_img4 from './resumelab_img4.png'
+import resumelab_img5 from './resumelab_img5.png'
+import resumelab_img6 from './resumelab_img6.png'
+import resumelab_logo from './resumelab_logo.png'
 
-import chatgram_img_1 from './chatgram_img_1.png'
-import chatgram_img_2 from './chatgram_img_2.png'
-import chatgram_img_3 from './chatgram_img_3.png'
+import inventory_img1 from './inventory_img1.png'
+import inventory_img2 from './inventory_img2.png'
+import inventory_img3 from './inventory_img3.png'
+import inventory_img4 from './inventory_img4.png'
+import inventory_img5 from './inventory_img5.png'
 
-import luxora_img_1 from './luxora_desktop_1.png'
-import luxora_img_2 from './luxora_desktop_2.png'
-import luxora_img_3 from './luxora_desktop_3.png'
-import luxora_img_4 from './luxora_desktop_4.png'
-
-export {
-  stellary_img_1,
-  stellary_img_2,
-  stellary_img_3,
-  stellary_img_4, 
-  stellary_img_5,
-  stellary_img_6,
-  stellary_logo,
-  
+export {  
   confidencv_img_0,
   confidencv_img_1,
   confidencv_img_2,
@@ -44,14 +29,17 @@ export {
   confidencv_img_5,
   confidencv_logo,
 
-  chatfriend_img_1, 
-  chatfriend_img_2, 
-  chatfriend_img_3, 
-  chatgram_img_1, 
-  chatgram_img_2, 
-  chatgram_img_3,
-  luxora_img_1,
-  luxora_img_2,
-  luxora_img_3,
-  luxora_img_4
+  resumelab_img1, 
+  resumelab_img2, 
+  resumelab_img3, 
+  resumelab_img4, 
+  resumelab_img5, 
+  resumelab_img6, 
+  resumelab_logo,
+
+  inventory_img1,
+  inventory_img2,
+  inventory_img3,
+  inventory_img4,
+  inventory_img5
 }
